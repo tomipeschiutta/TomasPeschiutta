@@ -1,0 +1,48 @@
+{
+    "menu": {
+        "item2": "Sobre mí",
+        "item3": "Habilidades",
+        "item4": "Formación",
+        "item5": "Proyectos",
+        "item6": "Contacto"
+    },
+
+    "home": {
+        "home_text-1": "Hola! Soy",
+        "home_text-3": "Desarrollador Full-Stack",
+        "parrafo-info": "Creación de aplicaciones para escritorio y móviles adaptadas a las necesidades específicas de cada cliente. Desde herramientas empresariales hasta soluciones interactivas, el desarrollo garantiza funcionalidad, diseño intuitivo y alto rendimiento en diversas plataformas.",
+        "cv_button": "Descargar CV",
+        "contact_button": "Contacto"
+    },
+
+    "sobre-mi": {
+        "title": "Sobre mí",
+        "texto_sobreMi": "Soy Técnico Superior en Programación, especializado en el desarrollo de aplicaciones a medida para escritorio y móviles.<br>Mi enfoque está en crear soluciones funcionales y personalizadas, adaptadas a las necesidades de cada proyecto."
+    },
+
+    "habilidades": {
+        "title": "Habilidades"
+    },
+
+    "formacion": {
+        "title": "Formación",
+        "formacion1": "Ingenieria en Sistemas",
+        "tiempo-formacion1": "2014 - En curso",
+        "formacion2": "Tec. Sup. en Programación",
+        "tiempo-formacion2": "2023 - 2025"
+    },
+
+    "proyectos": {
+        "title": "Proyectos",
+        "title-proyecto1": "App Solicitudes",
+        "info-proyecto1": "Aplicacion web/mobile en donde se cargan solicitudes de compras y se aprueban o rechazan, para luego pasar por el proceso de compras y seguimiento de la mercaderia.",
+        "title-proyecto2": "App Ganaderia",
+        "info-proyecto2": "Aplicacion web/mobile para el seguimiento del animal, desde su nacimiento hasta su posible venta/muerte, pasando asi por los procesos de sanidad y movimientos de la hacienda."
+    },
+
+    "contacto": {
+        "title": "Contacto",
+        "text": "Completa el siguiente formulario y me pondré en contacto contigo lo antes posible.",
+        "btn-enviar": "Enviar"
+    }
+}

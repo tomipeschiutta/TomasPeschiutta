@@ -1,0 +1,48 @@
+{
+    "menu": {
+        "item2": "About me",
+        "item3": "Skills",
+        "item4": "Training",
+        "item5": "Projects",
+        "item6": "Contact"
+    },
+
+    "home": {
+        "home_text-1": "Hi! I'm",
+        "home_text-3": "Full-Stack Developer",
+        "parrafo-info": "Creation of desktop and mobile applications tailored to the specific needs of each client. From business tools to interactive solutions, the development ensures functionality, intuitive design, and high performance across various platforms.",
+        "cv_button": "Download CV",
+        "contact_button": "Contact"
+    },
+
+    "sobre-mi": {
+        "title": "About me",
+        "texto_sobreMi": "I am a Senior Programming Technician specializing in custom application development for desktop and mobile platforms.<br>My focus is on creating functional and tailored solutions adapted to the needs of each project."
+    },
+
+    "habilidades": {
+        "title": "Skills"
+    },
+
+    "formacion": {
+        "title": "Training",
+        "formacion1": "Software engineer",
+        "tiempo-formacion1": "2014 - In progress",
+        "formacion2": "Senior Programming Technician",
+        "tiempo-formacion2": "2023 - 2025"
+    },
+
+    "proyectos": {
+        "title": "Projects",
+        "title-proyecto1": "App Requests",
+        "info-proyecto1": "Web/mobile application where purchase requests are submitted and either approved or rejected, followed by the purchasing process and tracking of the goods.",
+        "title-proyecto2": "App AnimalBreeding",
+        "info-proyecto2": "Web/mobile application for tracking animals from birth to their potential sale or death, covering processes such as health management and livestock movements."
+    },
+
+    "contacto": {
+        "title": "Contact",
+        "text": "Complete the form below and I will contact you as soon as possible.",
+        "btn-enviar": "Send"
+    }
+}
