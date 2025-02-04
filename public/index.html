@@ -7,7 +7,7 @@
     <meta name="description" content="Portafolio | Tomas Peschiutta Desarrollador">
     <meta name="robots" content="index,follow">
 
-    <title>Tomas Peschiutta | Desarrollador Full-Stack</title>
+    <title>Tomas Peschiutta | Desarrollador Flutter</title>
 
     <!-- Librerías -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -78,7 +78,7 @@
                 </div>
 
                 <div>
-                    <p class="home_text-3 text-type" data-section="home" data-value="home_text-3">Desarrollador Full-Stack</p>
+                    <p class="home_text-3 text-type" data-section="home" data-value="home_text-3">Desarrollador Flutter Full-Stack</p>
                 </div>
 
                 <div class="container_parrafo-info">
@@ -86,7 +86,7 @@
                 </div>
 
                 <div class="container_button">
-                    <a href="https://drive.google.com/file/d/1Sxlyp-KHbRrMbIU5_TaX6-BDHnwcEAUU/view?usp=sharing" target="_blank">
+                    <a href="https://drive.google.com/file/d/13EIvFcYQYUe-hRErYZYmg_Eb3amALPSM/view?usp=sharing" target="_blank">
                         <button class="cv_button" data-section="home" data-value="cv_button">Descargar CV</button>
                     </a>
                     <a href="#contacto">
@@ -207,12 +207,14 @@
                     <div class="container_imgCard--proyectos">
                         <img src="./assets/images/cap-solicitudes.png" alt="Proyecto: App Solicitudes">
                     </div>
-
                     <div class="container_textCard--proyectos">
-                        <h2 data-section="proyectos" data-value="title-proyecto1">App Solicitudes</h2>
-                        <p data-section="proyectos" data-value="info-proyecto1">Aplicacion web/mobile en donde se cargan solicitudes de compras y se aprueban o rechazan, para luego pasar por el proceso de compras y seguimiento de la mercaderia.</p>
+                        <h2>App Solicitudes</h2>
+                        <p>Aplicacion web/mobile en donde se cargan solicitudes de compras, esta se conecta a firebase para obtener el oauth del usuario y asi tener el rol.</p>
+                        <button class="open-modal" data-project="proyecto1">Ver más</button>
+                        
                     </div>
                 </div>
+                
 
                 <div class="cards--proyectos card_portafolio" data-aos="zoom-in-up" data-aos-anchor-placement="center-bottom">
                     <div class="container_imgCard--proyectos">
@@ -221,11 +223,136 @@
 
                     <div class="container_textCard--proyectos text-portafolio">
                         <h2 data-section="proyectos" data-value="title-proyecto2">App Ganaderia</h2>
-                        <p data-section="proyectos" data-value="info-proyecto2">Aplicacion web/mobile para el seguimiento del animal, desde su nacimiento hasta su posible venta/muerte, pasando asi por los procesos de sanidad y movimientos de la hacienda.</p>
+                        <p data-section="proyectos" data-value="info-proyecto2">Aplicacion web/mobile para el seguimiento del animal, esta esta desarrollada con firebase y SQLite para uso sin conexion a internet, con un boton de refresh para conectarlo a la nube.</p>
+                        <button class="open-modal2" data-project="proyecto1">Ver más</button>
+                    </div>
+                </div>
+                <div class="cards--proyectos card_portafolio" data-aos="zoom-in-up" data-aos-anchor-placement="center-bottom">
+                    <div class="container_imgCard--proyectos">
+                        <img src="./assets/images/cap-linx.png" alt="Proyecto: LinxApp: Pedidos">
+                    </div>
+
+                    <div class="container_textCard--proyectos text-portafolio">
+                        <h2 data-section="proyectos" data-value="title-proyecto2">LinxAPP: Pedidos</h2>
+                        <p data-section="proyectos" data-value="info-proyecto2">Aplicacion web/mobile para la carga de pedidos, esta se conecta a firebase y trabaja con API REST para descargar en el sistema de gestion.</p>
+                        <button class="open-modal3" data-project="proyecto1">Ver más</button>
                     </div>
                 </div>
             </div> 
         </section>
+        <!-- Modal para mostrar el carrusel -->
+<!-- Modal para mostrar el carrusel -->
+<div id="modal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        
+        <div class="carousel">
+            <div class="carousel-item active">
+                <img src="./assets/images/comp1.jpg" alt="Pantalla de Solicitudes">
+                <h3>Pantalla de Solicitudes</h3>
+                <p>Acá se cargan las solicitudes dependiendo del tiempo de compra que se quiere realizar.</p>
+            </div>
+            <div class="carousel-item">
+                <img src="./assets/images/comp2.jpg" alt="Pantalla Compras">
+                <h3>Pantalla Compras</h3>
+                <p>El usuario puede crear presupuestos basados en las solicitudes aprobadas, generar PDF y notificar al solicitante.</p>
+            </div>
+            <div class="carousel-item">
+                <img src="./assets/images/comp3.jpg" alt="Pantalla Aprobadores">
+                <h3>Pantalla Aprobadores</h3>
+                <p>Los aprobadores pueden aprobar y rechazar solicitudes, actualizando el estado y notificando a compras cuando son aprobadas.</p>
+            </div>
+            <div class="carousel-item">
+                <img src="./assets/images/comp4.jpg" alt="Detalle de Comprobante">
+                <h3>Detalle de Comprobante</h3>
+                <p>Se detallan los items aprobados con sus datos correspondientes.</p>
+            </div>
+        </div>
+        
+        <button class="prev">Anterior</button>
+        <button class="next">Siguiente</button>
+    </div>
+</div>
+
+
+<div id="modal2" class="modal2">
+    <div class="modal2-content">
+        <span class="close2">&times;</span>
+        
+        <div class="carousel2">
+            <div class="carousel-item2 active">
+                <img src="./assets/images/gan1.jpg" alt="Pantalla Principal">
+                <h3>Pantalla Principal</h3>
+                <p>Se pueden acceder a los 3 principales módulos de la aplicación: Cría, Recría y Feedlot dependiendo el rol del usuario.</p>
+            </div>
+            <div class="carousel-item2">
+                <img src="./assets/images/gan2.jpg" alt="Pantalla Cría">
+                <h3>Pantalla Cría</h3>
+                <p>Nos muestra un totalizador de animales cargados en la app y un botón de actualización con Firebase.</p>
+            </div>
+            <div class="carousel-item2">
+                <img src="./assets/images/gan3.jpg" alt="Mis Animales">
+                <h3>Mis Animales</h3>
+                <p>Listado de los animales cargados, con opción de exportar a Excel y consultar detalles de cada uno.</p>
+            </div>
+            <div class="carousel-item2">
+                <img src="./assets/images/gan4.jpg" alt="Ficha del Animal">
+                <h3>Ficha del Animal</h3>
+                <p>Información detallada del animal, incluyendo sus movimientos registrados.</p>
+            </div>
+            <div class="carousel-item2">
+                <img src="./assets/images/gan5.jpg" alt="Estadísticas del Totalizador">
+                <h3>Estadísticas del Totalizador</h3>
+                <p>Al hacer clic en el container totalizador, se muestran estadísticas relevantes sobre los animales.</p>
+            </div>
+        </div>
+        
+        <button class="prev2">Anterior</button>
+        <button class="next2">Siguiente</button>
+    </div>
+</div>
+
+<div id="modal3" class="modal3">
+    <div class="modal3-content">
+        <span class="close3">&times;</span>
+        
+        <div class="carousel3">
+            <div class="carousel-item3 active">
+                <img src="./assets/images/lin1.jpg" alt="Pantalla Pedidos">
+                <h3>Pantalla Pedidos</h3>
+                <p>Carga de pedidos por parte de los vendedores, estos se guardan en firebae para luego ser descargados en el sistema.</p>
+            </div>
+            <div class="carousel-item3">
+                <img src="./assets/images/lin2.jpg" alt="Pantalla Articulos">
+                <h3>Pantalla Articulos</h3>
+                <p>Listado de articulos con su descripcion, stock y precio, necesarios para el vendedor.</p>
+            </div>
+            <div class="carousel-item3">
+                <img src="./assets/images/lin3.jpg" alt="Clientes">
+                <h3>Clientes</h3>
+                <p>Listado de los clientes cargados, con sus datos personales y acceso a su cuenta corriente.</p>
+            </div>
+            <div class="carousel-item3">
+                <img src="./assets/images/lin4.jpg" alt="Ficha del Cliente">
+                <h3>Ficha del Cliente</h3>
+                <p>Información detallada del cliente, incluyendo sus movimientos registrados.</p>
+            </div>
+            <div class="carousel-item3">
+                <img src="./assets/images/lin5.jpg" alt="Detalle del Comprobante">
+                <h3>Detalle del Comprobante</h3>
+                <p>Cuando se finaliza un pedido se puede acceder al mismo e importarlo a pdf para compartirlo.</p>
+            </div>
+            <div class="carousel-item3">
+                <img src="./assets/images/lin6.jpg" alt="Menu Principal">
+                <h3>Menu Principal</h3>
+                <p>Menu totalmente modificable para accesos a diferentes modulos y/ procesos de la app.</p>
+            </div>
+        </div>
+        
+        <button class="prev3">Anterior</button>
+        <button class="next3">Siguiente</button>
+    </div>
+</div>
 
         <!-- Contacto -->
         <section class="contacto" id="contacto">
