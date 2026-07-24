@@ -167,7 +167,7 @@ export function initCounters() {
     if (!items.length) return;
 
     if (prefersReducedMotion) {
-        items.forEach((el) => (el.textContent = el.dataset.count));
+        items.forEach((el) => (el.textContent = el.dataset.count + (el.dataset.suffix || '')));
         return;
     }
 
@@ -180,9 +180,10 @@ export function initCounters() {
                 const duration = 900;
                 const started = performance.now();
 
+                const suffix = el.dataset.suffix || '';
                 const step = (now) => {
                     const progress = Math.min((now - started) / duration, 1);
-                    el.textContent = Math.round(end * (1 - Math.pow(1 - progress, 3)));
+                    el.textContent = Math.round(end * (1 - Math.pow(1 - progress, 3))) + suffix;
                     if (progress < 1) requestAnimationFrame(step);
                 };
                 requestAnimationFrame(step);

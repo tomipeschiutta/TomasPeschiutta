@@ -4,19 +4,19 @@
   "stack": [
     {
       "title": { "es": "Lenguajes", "en": "Languages" },
-      "items": ["JavaScript", "Dart", "Python", "SQL", "HTML5", "CSS3"]
+      "items": ["JavaScript", "TypeScript", "Dart", "Python", "SQL", "HTML5", "CSS3"]
     },
     {
       "title": { "es": "Frontend", "en": "Frontend" },
-      "items": ["JavaScript (ES6+)", "CSS moderno", "Diseño responsivo", "Accesibilidad", "Consumo de APIs"]
+      "items": ["React", "Next.js", "JavaScript (ES6+)", "CSS moderno", "Diseño responsivo", "Accesibilidad", "Consumo de APIs"]
     },
     {
       "title": { "es": "Backend y APIs", "en": "Backend & APIs" },
-      "items": ["API REST", "JSON", "Firebase", "Cloud Firestore", "Autenticación OAuth", "Roles y permisos"]
+      "items": ["Node.js", "Express", "FastAPI", "API REST", "Prisma (ORM)", "Firebase", "Cloud Firestore", "Autenticación OAuth", "Roles y permisos"]
     },
     {
       "title": { "es": "Bases de datos", "en": "Databases" },
-      "items": ["MySQL", "SQL Server", "SQLite", "Firestore", "Modelado relacional"]
+      "items": ["PostgreSQL", "MySQL", "SQL Server", "SQLite", "Firestore", "Modelado relacional"]
     },
     {
       "title": { "es": "Móvil y escritorio", "en": "Mobile & Desktop" },
@@ -24,7 +24,7 @@
     },
     {
       "title": { "es": "Herramientas", "en": "Tooling" },
-      "items": ["Git", "GitHub", "Firebase Hosting", "Postman", "VS Code"]
+      "items": ["Git", "GitHub", "Docker", "Firebase Hosting", "Postman", "VS Code"]
     }
   ],
 
