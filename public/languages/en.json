@@ -1,48 +1,121 @@
 {
-    "menu": {
-        "item2": "About me",
-        "item3": "Skills",
-        "item4": "Training",
-        "item5": "Projects",
-        "item6": "Contact"
-    },
+  "meta": {
+    "title": "Tomás Peschiutta | Full-Stack Developer",
+    "description": "Full-Stack Developer. I design and build the whole system: APIs, databases, web and mobile applications."
+  },
 
-    "home": {
-        "home_text-1": "Hi! I'm",
-        "home_text-3": "Flutter Full-Stack Developer",
-        "parrafo-info": "Creation of desktop and mobile applications tailored to the specific needs of each client. From business tools to interactive solutions, the development ensures functionality, intuitive design, and high performance across various platforms.",
-        "cv_button": "Download CV",
-        "contact_button": "Contact"
-    },
+  "a11y": {
+    "skip": "Skip to content",
+    "theme": "Toggle theme",
+    "menu": "Open menu",
+    "menuClose": "Close menu",
+    "goTop": "Back to top",
+    "close": "Close",
+    "prev": "Previous",
+    "next": "Next"
+  },
 
-    "sobre-mi": {
-        "title": "About me",
-        "texto_sobreMi": "I am a Senior Programming Technician specializing in custom application development for desktop and mobile platforms.<br>My focus is on creating functional and tailored solutions adapted to the needs of each project."
-    },
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "stack": "Stack",
+    "projects": "Projects",
+    "education": "Education",
+    "contact": "Contact"
+  },
 
-    "habilidades": {
-        "title": "Skills"
-    },
+  "hero": {
+    "available": "Available for new projects",
+    "greeting": "Hi, I'm",
+    "roles": [
+      "Full-Stack Developer",
+      "Backend, APIs and databases",
+      "Web and mobile applications",
+      "From the data model to the interface"
+    ],
+    "lead": "I design and build the whole system: the data model, the API that exposes it, and the interface — web, mobile or desktop — the end user actually works with.",
+    "ctaProjects": "View projects",
+    "ctaCv": "Download CV",
+    "statApps": "apps in production",
+    "statYears": "years coding",
+    "statPlatforms": "platforms: web, mobile and desktop"
+  },
 
-    "formacion": {
-        "title": "Training",
-        "formacion1": "Software engineer",
-        "tiempo-formacion1": "2014 - In progress",
-        "formacion2": "Senior Programming Technician",
-        "tiempo-formacion2": "2023 - 2025"
-    },
+  "about": {
+    "label": "01 — Profile",
+    "title": "About me",
+    "p1": "I'm a Higher Technician in Programming and a full-stack developer. I work across a product's full cycle: I map the real business process, model the database, build the API and develop the interface the client uses.",
+    "p2": "Most of what I've built is in production solving concrete processes: purchase approval workflows, livestock traceability and order taking integrated with an ERP. I care about software that works offline, syncs reliably and doesn't get in the way of the people using it.",
+    "point1": "Integration with existing management systems over REST APIs",
+    "point2": "Offline-first architecture with cloud synchronization",
+    "point3": "Authentication and role-based access control",
+    "point4": "A single codebase for web, mobile and desktop",
+    "s1Title": "Backend & data",
+    "s1Text": "Relational modeling, SQL queries, REST APIs, authentication and server-side business rules.",
+    "s2Title": "Web",
+    "s2Text": "Responsive and accessible interfaces, API consumption, dashboards and admin panels.",
+    "s3Title": "Mobile & desktop",
+    "s3Text": "Cross-platform applications with local storage, offline usage and deferred synchronization."
+  },
 
-    "proyectos": {
-        "title": "Projects",
-        "title-proyecto1": "App Requests",
-        "info-proyecto1": "Web/mobile application where purchase requests are submitted and either approved or rejected, followed by the purchasing process and tracking of the goods.",
-        "title-proyecto2": "App AnimalBreeding",
-        "info-proyecto2": "Web/mobile application for tracking animals from birth to their potential sale or death, covering processes such as health management and livestock movements."
-    },
+  "stack": {
+    "label": "02 — Technologies",
+    "title": "Stack",
+    "desc": "Tools I work with regularly, grouped by layer."
+  },
 
-    "contacto": {
-        "title": "Contact",
-        "text": "Complete the form below and I will contact you as soon as possible.",
-        "btn-enviar": "Send"
+  "projects": {
+    "label": "03 — Work",
+    "title": "Projects",
+    "desc": "Systems I built end to end. Open each one to see the screens and the technical decisions behind them.",
+    "view": "View details",
+    "empty": "No projects in this category yet.",
+    "screens": "screens",
+    "filters": {
+      "all": "All",
+      "web": "Web",
+      "mobile": "Mobile",
+      "backend": "Backend",
+      "data": "Data",
+      "desktop": "Desktop"
     }
+  },
+
+  "modal": {
+    "screen": "Screen",
+    "highlights": "Technical points",
+    "stack": "Stack",
+    "role": "My role",
+    "counter": "of"
+  },
+
+  "education": {
+    "label": "04 — Background",
+    "title": "Education",
+    "work": "Experience",
+    "study": "Education"
+  },
+
+  "contact": {
+    "label": "05 — Get in touch",
+    "title": "Contact",
+    "desc": "Got a project or an open role? Drop me a line and I'll get back to you shortly.",
+    "email": "Email",
+    "fName": "Name",
+    "fEmail": "Email",
+    "fSubject": "Subject",
+    "fMessage": "Message",
+    "send": "Send message",
+    "sending": "Sending…",
+    "sent": "Done! Your message was sent. I'll get back to you shortly.",
+    "mailFallback": "Your email client just opened with the message ready to send. If nothing happened, write to me at tomipeschiutta@gmail.com.",
+    "error": "Couldn't send it. Try again or email me at tomipeschiutta@gmail.com.",
+    "errRequired": "This field is required.",
+    "errEmail": "Enter a valid email address.",
+    "errShort": "Tell me a bit more (10 characters minimum)."
+  },
+
+  "footer": {
+    "built": "Built with HTML, CSS and JavaScript"
+  }
 }

@@ -1,0 +1,69 @@
+{
+  "_comment": "Stack y línea de tiempo. Los nombres de tecnologías no se traducen; los títulos de grupo y las entradas de la timeline sí. En 'timeline', type puede ser 'work' o 'education' y draft:true la oculta.",
+
+  "stack": [
+    {
+      "title": { "es": "Lenguajes", "en": "Languages" },
+      "items": ["JavaScript", "Dart", "Python", "SQL", "HTML5", "CSS3"]
+    },
+    {
+      "title": { "es": "Frontend", "en": "Frontend" },
+      "items": ["JavaScript (ES6+)", "CSS moderno", "Diseño responsivo", "Accesibilidad", "Consumo de APIs"]
+    },
+    {
+      "title": { "es": "Backend y APIs", "en": "Backend & APIs" },
+      "items": ["API REST", "JSON", "Firebase", "Cloud Firestore", "Autenticación OAuth", "Roles y permisos"]
+    },
+    {
+      "title": { "es": "Bases de datos", "en": "Databases" },
+      "items": ["MySQL", "SQL Server", "SQLite", "Firestore", "Modelado relacional"]
+    },
+    {
+      "title": { "es": "Móvil y escritorio", "en": "Mobile & Desktop" },
+      "items": ["Flutter", "Multiplataforma", "Offline-first", "Almacenamiento local", "Sincronización"]
+    },
+    {
+      "title": { "es": "Herramientas", "en": "Tooling" },
+      "items": ["Git", "GitHub", "Firebase Hosting", "Postman", "VS Code"]
+    }
+  ],
+
+  "timeline": [
+    {
+      "type": "education",
+      "draft": false,
+      "period": { "es": "2023 — 2025", "en": "2023 — 2025" },
+      "title": { "es": "Técnico Superior en Programación", "en": "Higher Technician in Programming" },
+      "org": "Teclab — Instituto Técnico Superior",
+      "logo": "./assets/images/logo-teclab.png",
+      "desc": {
+        "es": "Título finalizado. Formación en algoritmos, bases de datos relacionales, programación orientada a objetos y desarrollo de aplicaciones.",
+        "en": "Completed degree. Training in algorithms, relational databases, object-oriented programming and application development."
+      }
+    },
+    {
+      "type": "education",
+      "draft": false,
+      "period": { "es": "2014 — En curso", "en": "2014 — In progress" },
+      "title": { "es": "Ingeniería en Sistemas de Información", "en": "Information Systems Engineering" },
+      "org": "Universidad Tecnológica Nacional (UTN)",
+      "logo": "./assets/images/logo-utn.png",
+      "desc": {
+        "es": "Cursada en curso, con foco en arquitectura de sistemas, análisis y diseño de software.",
+        "en": "Ongoing, focused on systems architecture, software analysis and design."
+      }
+    },
+    {
+      "type": "work",
+      "draft": true,
+      "period": { "es": "2024 — Actualidad", "en": "2024 — Present" },
+      "title": { "es": "PUESTO — completar", "en": "ROLE — to complete" },
+      "org": "Empresa",
+      "logo": "",
+      "desc": {
+        "es": "Describí acá qué construiste y con qué impacto. Poné \"draft\": false para que esta entrada aparezca en el sitio.",
+        "en": "Describe here what you built and its impact. Set \"draft\": false for this entry to show up on the site."
+      }
+    }
+  ]
+}

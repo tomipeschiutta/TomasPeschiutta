@@ -1,0 +1,303 @@
+{
+  "_comment": "Cada proyecto se renderiza solo. Para agregar uno nuevo copiá un bloque completo y cambiá los datos. Poné \"draft\": true para que NO aparezca en el sitio (borrador). Los tags válidos están en 'filters' de languages/es.json y en.json: web, mobile, backend, data, desktop.",
+
+  "projects": [
+    {
+      "id": "solicitudes",
+      "draft": false,
+      "year": "2024",
+      "tags": ["web", "mobile", "backend"],
+      "cover": "./assets/images/cap-solicitudes.png",
+      "title": { "es": "Gestión de Solicitudes de Compra", "en": "Purchase Request Management" },
+      "context": { "es": "Sistema interno · Multiplataforma", "en": "Internal system · Cross-platform" },
+      "summary": {
+        "es": "Circuito completo de compras: el usuario carga la solicitud, el aprobador la autoriza o rechaza y el área de compras genera el presupuesto. El rol de cada persona se resuelve contra Firebase al iniciar sesión y define qué pantallas ve.",
+        "en": "End-to-end purchasing flow: users submit requests, approvers authorize or reject them, and the purchasing team builds the quote. Each person's role is resolved against Firebase at login and determines which screens they see."
+      },
+      "role": {
+        "es": "Diseño de datos, backend y aplicación completa",
+        "en": "Data design, backend and full application"
+      },
+      "stack": ["Flutter", "Dart", "Firebase Auth", "Cloud Firestore", "OAuth 2.0", "PDF"],
+      "highlights": {
+        "es": [
+          "Autenticación con OAuth: el rol del usuario se lee de Firebase y habilita las vistas de solicitante, aprobador o compras.",
+          "Máquina de estados de la solicitud (pendiente → aprobada/rechazada → presupuestada) con notificaciones en cada transición.",
+          "Generación de comprobantes en PDF a partir de los ítems aprobados, listos para compartir.",
+          "Una sola base de código desplegada como web y como app móvil."
+        ],
+        "en": [
+          "OAuth authentication: the user role is read from Firebase and unlocks the requester, approver or purchasing views.",
+          "Request state machine (pending → approved/rejected → quoted) with notifications on every transition.",
+          "PDF document generation from the approved line items, ready to share.",
+          "A single codebase deployed as both a web and a mobile app."
+        ]
+      },
+      "links": [],
+      "gallery": [
+        {
+          "src": "./assets/images/comp1.jpg",
+          "title": { "es": "Carga de solicitudes", "en": "Request submission" },
+          "desc": {
+            "es": "El solicitante carga los ítems que necesita y el plazo de compra. El formulario valida los datos antes de enviarlos a Firestore.",
+            "en": "The requester enters the items needed and the purchase timeframe. The form validates the data before writing it to Firestore."
+          }
+        },
+        {
+          "src": "./assets/images/comp2.jpg",
+          "title": { "es": "Módulo de compras", "en": "Purchasing module" },
+          "desc": {
+            "es": "Sobre las solicitudes aprobadas se arma el presupuesto, se exporta a PDF y se notifica automáticamente al solicitante.",
+            "en": "Quotes are built on top of approved requests, exported to PDF and the requester is notified automatically."
+          }
+        },
+        {
+          "src": "./assets/images/comp3.jpg",
+          "title": { "es": "Bandeja del aprobador", "en": "Approver inbox" },
+          "desc": {
+            "es": "Vista filtrada por estado (todos, pendientes, cerrados). Aprobar o rechazar actualiza el estado y dispara la notificación a compras.",
+            "en": "View filtered by status (all, pending, closed). Approving or rejecting updates the state and triggers a notification to purchasing."
+          }
+        },
+        {
+          "src": "./assets/images/comp4.jpg",
+          "title": { "es": "Detalle del comprobante", "en": "Document detail" },
+          "desc": {
+            "es": "Desglose de los ítems aprobados con cantidades, importes y trazabilidad de quién autorizó cada uno.",
+            "en": "Breakdown of approved items with quantities, amounts and traceability of who authorized each one."
+          }
+        }
+      ]
+    },
+
+    {
+      "id": "ganaderia",
+      "draft": false,
+      "year": "2024",
+      "tags": ["mobile", "web", "data"],
+      "cover": "./assets/images/cap-ganaderia.png",
+      "title": { "es": "Trazabilidad Ganadera", "en": "Livestock Traceability" },
+      "context": { "es": "Aplicación offline-first · Campo", "en": "Offline-first application · Field work" },
+      "summary": {
+        "es": "Seguimiento del animal a lo largo de todo su ciclo: cría, recría y feedlot. Pensada para trabajar en el campo sin señal, guarda todo en SQLite local y sincroniza contra Firebase cuando hay conexión.",
+        "en": "Animal tracking across its full cycle: breeding, rearing and feedlot. Built for fieldwork without signal, it stores everything in local SQLite and syncs to Firebase once a connection is available."
+      },
+      "role": {
+        "es": "Modelo de datos, sincronización y aplicación completa",
+        "en": "Data model, synchronization and full application"
+      },
+      "stack": ["Flutter", "Dart", "SQLite", "Firebase", "Cloud Firestore", "Excel export"],
+      "highlights": {
+        "es": [
+          "Arquitectura offline-first: la base local SQLite es la fuente de verdad en el campo y la nube se actualiza a demanda.",
+          "Sincronización manual controlada por el usuario, para no consumir datos cuando la señal es mala o cara.",
+          "Módulos separados por etapa productiva (cría, recría, feedlot) con acceso según el rol del usuario.",
+          "Exportación del padrón de animales a Excel y estadísticas agregadas sobre el total de hacienda."
+        ],
+        "en": [
+          "Offline-first architecture: the local SQLite database is the source of truth in the field, and the cloud is updated on demand.",
+          "User-triggered sync, to avoid burning mobile data when the signal is poor or expensive.",
+          "Modules split by production stage (breeding, rearing, feedlot) with role-based access.",
+          "Excel export of the animal registry plus aggregate statistics over the whole herd."
+        ]
+      },
+      "links": [],
+      "gallery": [
+        {
+          "src": "./assets/images/gan1.jpg",
+          "title": { "es": "Pantalla principal", "en": "Home screen" },
+          "desc": {
+            "es": "Acceso a los tres módulos productivos —cría, recría y feedlot—. El rol del usuario determina cuáles quedan habilitados.",
+            "en": "Access to the three production modules — breeding, rearing and feedlot. The user role determines which ones are enabled."
+          }
+        },
+        {
+          "src": "./assets/images/gan2.jpg",
+          "title": { "es": "Módulo de cría", "en": "Breeding module" },
+          "desc": {
+            "es": "Totalizador de animales cargados localmente y botón de sincronización explícito contra Firebase.",
+            "en": "Counter of locally stored animals plus an explicit sync button against Firebase."
+          }
+        },
+        {
+          "src": "./assets/images/gan3.jpg",
+          "title": { "es": "Padrón de animales", "en": "Animal registry" },
+          "desc": {
+            "es": "Listado consultable de la hacienda cargada, con exportación a Excel y acceso al detalle de cada animal.",
+            "en": "Searchable listing of the registered herd, with Excel export and access to each animal's detail."
+          }
+        },
+        {
+          "src": "./assets/images/gan4.jpg",
+          "title": { "es": "Ficha del animal", "en": "Animal record" },
+          "desc": {
+            "es": "Historia completa del animal: datos de identificación y todos los movimientos y eventos sanitarios registrados.",
+            "en": "Full history of the animal: identification data plus every recorded movement and health event."
+          }
+        },
+        {
+          "src": "./assets/images/gan5.jpg",
+          "title": { "es": "Estadísticas", "en": "Statistics" },
+          "desc": {
+            "es": "Indicadores agregados calculados sobre la base local: composición del rodeo y evolución del stock.",
+            "en": "Aggregate indicators computed over the local database: herd composition and stock evolution."
+          }
+        }
+      ]
+    },
+
+    {
+      "id": "linx-pedidos",
+      "draft": false,
+      "year": "2025",
+      "tags": ["mobile", "web", "backend"],
+      "cover": "./assets/images/cap-linx.png",
+      "title": { "es": "LinxApp — Pedidos", "en": "LinxApp — Orders" },
+      "context": { "es": "Fuerza de ventas · Integrada a ERP", "en": "Sales force · ERP integrated" },
+      "summary": {
+        "es": "App de toma de pedidos para vendedores en la calle. Los pedidos se guardan en Firebase y bajan al sistema de gestión a través de una API REST, sin carga manual intermedia.",
+        "en": "Order-taking app for field sales reps. Orders are stored in Firebase and pushed into the ERP through a REST API, with no manual re-entry in between."
+      },
+      "role": {
+        "es": "Integración con el ERP y aplicación completa",
+        "en": "ERP integration and full application"
+      },
+      "stack": ["Flutter", "Dart", "Firebase", "API REST", "JSON", "PDF"],
+      "highlights": {
+        "es": [
+          "Integración bidireccional con el sistema de gestión vía API REST: artículos, stock y precios bajan; los pedidos suben.",
+          "Consulta de cuenta corriente y movimientos del cliente directamente desde la app del vendedor.",
+          "Menú principal configurable, para habilitar módulos distintos según el cliente sin recompilar.",
+          "Exportación del pedido a PDF para compartirlo con el cliente en el momento."
+        ],
+        "en": [
+          "Two-way ERP integration over a REST API: items, stock and prices come down; orders go up.",
+          "Customer account balance and transaction history available straight from the rep's app.",
+          "Configurable main menu, so different clients get different modules without a rebuild.",
+          "Order export to PDF to share with the customer on the spot."
+        ]
+      },
+      "links": [],
+      "gallery": [
+        {
+          "src": "./assets/images/lin1.jpg",
+          "title": { "es": "Carga de pedidos", "en": "Order entry" },
+          "desc": {
+            "es": "El vendedor arma el pedido en el momento. Queda en Firebase y luego se descarga al sistema de gestión.",
+            "en": "The rep builds the order on the spot. It lands in Firebase and is later pulled into the ERP."
+          }
+        },
+        {
+          "src": "./assets/images/lin2.jpg",
+          "title": { "es": "Catálogo de artículos", "en": "Item catalog" },
+          "desc": {
+            "es": "Listado con descripción, stock disponible y precio, sincronizado desde el ERP mediante la API.",
+            "en": "Listing with description, available stock and price, synced from the ERP through the API."
+          }
+        },
+        {
+          "src": "./assets/images/lin3.jpg",
+          "title": { "es": "Clientes", "en": "Customers" },
+          "desc": {
+            "es": "Cartera del vendedor con los datos de cada cliente y acceso directo a su cuenta corriente.",
+            "en": "The rep's customer portfolio with each client's data and direct access to their account balance."
+          }
+        },
+        {
+          "src": "./assets/images/lin4.jpg",
+          "title": { "es": "Ficha del cliente", "en": "Customer record" },
+          "desc": {
+            "es": "Detalle del cliente con el historial de movimientos y comprobantes asociados.",
+            "en": "Customer detail with transaction history and related documents."
+          }
+        },
+        {
+          "src": "./assets/images/lin5.jpg",
+          "title": { "es": "Detalle del comprobante", "en": "Document detail" },
+          "desc": {
+            "es": "Pedido cerrado, con exportación a PDF para enviárselo al cliente desde el celular.",
+            "en": "Closed order, with PDF export to send to the customer straight from the phone."
+          }
+        },
+        {
+          "src": "./assets/images/lin6.jpg",
+          "title": { "es": "Menú configurable", "en": "Configurable menu" },
+          "desc": {
+            "es": "Los accesos a módulos y procesos se definen por configuración, sin tocar el código de la app.",
+            "en": "Module and process shortcuts are defined by configuration, without touching the app code."
+          }
+        }
+      ]
+    },
+
+    {
+      "id": "plantilla-backend",
+      "draft": true,
+      "year": "2025",
+      "tags": ["backend", "data"],
+      "cover": "./assets/images/cap-encriptador.png",
+      "title": { "es": "TÍTULO DEL PROYECTO", "en": "PROJECT TITLE" },
+      "context": { "es": "Tipo de proyecto · Contexto", "en": "Project type · Context" },
+      "summary": {
+        "es": "Dos o tres frases sobre QUÉ problema resuelve y para QUIÉN. Evitá describir la tecnología acá: eso va en el stack y en los puntos técnicos.",
+        "en": "Two or three sentences about WHAT problem it solves and for WHOM. Don't describe the technology here: that goes in the stack and technical points."
+      },
+      "role": { "es": "Tu rol en el proyecto", "en": "Your role in the project" },
+      "stack": ["Python", "FastAPI", "PostgreSQL", "Docker"],
+      "highlights": {
+        "es": [
+          "Decisión técnica interesante que tomaste y por qué.",
+          "Algo que hayas optimizado, medido o automatizado.",
+          "Una integración o un problema difícil que resolviste."
+        ],
+        "en": [
+          "An interesting technical decision you made and why.",
+          "Something you optimized, measured or automated.",
+          "An integration or hard problem you solved."
+        ]
+      },
+      "links": [
+        { "url": "https://github.com/tomipeschiutta", "type": "repo", "label": { "es": "Código", "en": "Source" } },
+        { "url": "https://ejemplo.com", "type": "demo", "label": { "es": "Ver demo", "en": "Live demo" } }
+      ],
+      "gallery": [
+        {
+          "src": "./assets/images/cap-encriptador.png",
+          "title": { "es": "Nombre de la pantalla", "en": "Screen name" },
+          "desc": {
+            "es": "Qué se ve acá y qué hace el usuario en esta pantalla.",
+            "en": "What is shown here and what the user does on this screen."
+          }
+        }
+      ]
+    },
+
+    {
+      "id": "plantilla-web",
+      "draft": true,
+      "year": "2025",
+      "tags": ["web"],
+      "cover": "./assets/images/cap1.jpg",
+      "title": { "es": "OTRO PROYECTO", "en": "ANOTHER PROJECT" },
+      "context": { "es": "Tipo de proyecto · Contexto", "en": "Project type · Context" },
+      "summary": {
+        "es": "Copiá este bloque completo cada vez que quieras sumar un proyecto y cambiá el \"id\" por uno único.",
+        "en": "Copy this whole block whenever you want to add a project and change the \"id\" to a unique one."
+      },
+      "role": { "es": "Tu rol en el proyecto", "en": "Your role in the project" },
+      "stack": ["JavaScript", "Node.js", "MySQL"],
+      "highlights": {
+        "es": ["Punto técnico 1.", "Punto técnico 2."],
+        "en": ["Technical point 1.", "Technical point 2."]
+      },
+      "links": [],
+      "gallery": [
+        {
+          "src": "./assets/images/cap1.jpg",
+          "title": { "es": "Nombre de la pantalla", "en": "Screen name" },
+          "desc": { "es": "Descripción de la pantalla.", "en": "Screen description." }
+        }
+      ]
+    }
+  ]
+}

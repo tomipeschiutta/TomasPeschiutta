@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://tomaspeschiutta-e1257.web.app/sitemap.xml

@@ -1,48 +1,121 @@
 {
-    "menu": {
-        "item2": "Sobre mí",
-        "item3": "Habilidades",
-        "item4": "Formación",
-        "item5": "Proyectos",
-        "item6": "Contacto"
-    },
+  "meta": {
+    "title": "Tomás Peschiutta | Desarrollador Full-Stack",
+    "description": "Desarrollador Full-Stack. Diseño y construyo el sistema completo: APIs, bases de datos, aplicaciones web y móviles."
+  },
 
-    "home": {
-        "home_text-1": "Hola! Soy",
-        "home_text-3": "Desarrollador Flutter Full-Stack",
-        "parrafo-info": "Creación de aplicaciones para escritorio y móviles adaptadas a las necesidades específicas de cada cliente. Desde herramientas empresariales hasta soluciones interactivas, el desarrollo garantiza funcionalidad, diseño intuitivo y alto rendimiento en diversas plataformas.",
-        "cv_button": "Descargar CV",
-        "contact_button": "Contacto"
-    },
+  "a11y": {
+    "skip": "Ir al contenido",
+    "theme": "Cambiar tema",
+    "menu": "Abrir menú",
+    "menuClose": "Cerrar menú",
+    "goTop": "Volver arriba",
+    "close": "Cerrar",
+    "prev": "Anterior",
+    "next": "Siguiente"
+  },
 
-    "sobre-mi": {
-        "title": "Sobre mí",
-        "texto_sobreMi": "Soy Técnico Superior en Programación, especializado en el desarrollo de aplicaciones a medida para escritorio y móviles.<br>Mi enfoque está en crear soluciones funcionales y personalizadas, adaptadas a las necesidades de cada proyecto."
-    },
+  "nav": {
+    "home": "Inicio",
+    "about": "Sobre mí",
+    "stack": "Stack",
+    "projects": "Proyectos",
+    "education": "Formación",
+    "contact": "Contacto"
+  },
 
-    "habilidades": {
-        "title": "Habilidades"
-    },
+  "hero": {
+    "available": "Disponible para nuevos proyectos",
+    "greeting": "Hola, soy",
+    "roles": [
+      "Desarrollador Full-Stack",
+      "Backend, APIs y bases de datos",
+      "Aplicaciones web y móviles",
+      "Del modelo de datos a la interfaz"
+    ],
+    "lead": "Diseño y construyo el sistema completo: el modelo de datos, la API que lo expone y la interfaz —web, móvil o escritorio— con la que el usuario final trabaja.",
+    "ctaProjects": "Ver proyectos",
+    "ctaCv": "Descargar CV",
+    "statApps": "apps en producción",
+    "statYears": "años programando",
+    "statPlatforms": "plataformas: web, móvil y escritorio"
+  },
 
-    "formacion": {
-        "title": "Formación",
-        "formacion1": "Ingenieria en Sistemas",
-        "tiempo-formacion1": "2014 - En curso",
-        "formacion2": "Tec. Sup. en Programación",
-        "tiempo-formacion2": "2023 - 2025"
-    },
+  "about": {
+    "label": "01 — Perfil",
+    "title": "Sobre mí",
+    "p1": "Soy Técnico Superior en Programación y desarrollador full-stack. Trabajo el ciclo completo de un producto: relevo el proceso real del negocio, modelo la base de datos, construyo la API y desarrollo la interfaz que usa el cliente.",
+    "p2": "La mayoría de lo que hice está en producción resolviendo procesos concretos: circuitos de aprobación de compras, trazabilidad ganadera y carga de pedidos integrada a un sistema de gestión. Me interesa que el software funcione offline, sincronice bien y no le complique la vida a quien lo usa.",
+    "point1": "Integración con sistemas de gestión existentes vía API REST",
+    "point2": "Arquitectura offline-first con sincronización a la nube",
+    "point3": "Autenticación y control de acceso por roles",
+    "point4": "Una sola base de código para web, móvil y escritorio",
+    "s1Title": "Backend y datos",
+    "s1Text": "Modelado relacional, consultas SQL, APIs REST, autenticación y reglas de negocio del lado del servidor.",
+    "s2Title": "Web",
+    "s2Text": "Interfaces responsivas y accesibles, consumo de APIs, dashboards y paneles de administración.",
+    "s3Title": "Móvil y escritorio",
+    "s3Text": "Aplicaciones multiplataforma con almacenamiento local, uso sin conexión y sincronización posterior."
+  },
 
-    "proyectos": {
-        "title": "Proyectos",
-        "title-proyecto1": "App Solicitudes",
-        "info-proyecto1": "Aplicacion web/mobile en donde se cargan solicitudes de compras y se aprueban o rechazan, para luego pasar por el proceso de compras y seguimiento de la mercaderia.",
-        "title-proyecto2": "App Ganaderia",
-        "info-proyecto2": "Aplicacion web/mobile para el seguimiento del animal, desde su nacimiento hasta su posible venta/muerte, pasando asi por los procesos de sanidad y movimientos de la hacienda."
-    },
+  "stack": {
+    "label": "02 — Tecnologías",
+    "title": "Stack",
+    "desc": "Herramientas con las que trabajo habitualmente, agrupadas por capa."
+  },
 
-    "contacto": {
-        "title": "Contacto",
-        "text": "Completa el siguiente formulario y me pondré en contacto contigo lo antes posible.",
-        "btn-enviar": "Enviar"
+  "projects": {
+    "label": "03 — Trabajo",
+    "title": "Proyectos",
+    "desc": "Sistemas que construí de punta a punta. Entrá a cada uno para ver las pantallas y las decisiones técnicas.",
+    "view": "Ver detalles",
+    "empty": "No hay proyectos en esta categoría todavía.",
+    "screens": "pantallas",
+    "filters": {
+      "all": "Todos",
+      "web": "Web",
+      "mobile": "Móvil",
+      "backend": "Backend",
+      "data": "Datos",
+      "desktop": "Escritorio"
     }
+  },
+
+  "modal": {
+    "screen": "Pantalla",
+    "highlights": "Puntos técnicos",
+    "stack": "Stack",
+    "role": "Mi rol",
+    "counter": "de"
+  },
+
+  "education": {
+    "label": "04 — Recorrido",
+    "title": "Formación",
+    "work": "Experiencia",
+    "study": "Formación"
+  },
+
+  "contact": {
+    "label": "05 — Hablemos",
+    "title": "Contacto",
+    "desc": "¿Tenés un proyecto o una búsqueda abierta? Escribime y te respondo a la brevedad.",
+    "email": "Email",
+    "fName": "Nombre",
+    "fEmail": "Email",
+    "fSubject": "Asunto",
+    "fMessage": "Mensaje",
+    "send": "Enviar mensaje",
+    "sending": "Enviando…",
+    "sent": "¡Listo! Tu mensaje fue enviado. Te respondo a la brevedad.",
+    "mailFallback": "Se abrió tu cliente de correo con el mensaje listo para enviar. Si no pasó nada, escribime directo a tomipeschiutta@gmail.com.",
+    "error": "No se pudo enviar. Probá de nuevo o escribime a tomipeschiutta@gmail.com.",
+    "errRequired": "Este campo es obligatorio.",
+    "errEmail": "Ingresá un email válido.",
+    "errShort": "Contame un poco más (mínimo 10 caracteres)."
+  },
+
+  "footer": {
+    "built": "Hecho con HTML, CSS y JavaScript"
+  }
 }
